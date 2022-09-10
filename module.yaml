@@ -1,0 +1,4 @@
+name: cloudflared
+version: 1.0.0
+deb_packages:
+  - https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
