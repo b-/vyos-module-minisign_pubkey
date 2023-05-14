@@ -1,4 +1,4 @@
-name: cloudflared
+name: minisign_pubkey
 version: 1.0.0
-deb_packages:
-  - https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+vyos_build_script: |
+    printenv MINISIGN_PUBLIC_KEY > data/live-build-config/includes.chroot/usr/share/vyos/keys/vyos-release.minisign.pub
