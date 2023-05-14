@@ -1,4 +1,5 @@
 name: minisign_pubkey
 version: 1.0.0
 vyos_build_script: |
+    #!/bin/bash -x
     printenv MINISIGN_PUBLIC_KEY > data/live-build-config/includes.chroot/usr/share/vyos/keys/vyos-release.minisign.pub
